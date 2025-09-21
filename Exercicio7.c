@@ -90,7 +90,7 @@ int main(void) {
                 printf("\nPassos: Identifique os coeficientes:\n");
                 printf("a = %.f (o numero que acompanha o x^2)\n",a);
                 printf("b = %.f (o numero que acompanha o x)\n",b);
-                printf("c = %.f (o termo independente)\n");
+                printf("c = %.f (o termo independente)\n",c);
                 printf("\n1) Calcule o discriminante: Delta = b^2 - 4*a*c\n");
                 printf("\nSubstitua os valores de a, b, c na formula de delta.\n");
                 printf("Delta = %.f^2 - 4*%.f*%.f\n", b, a, c);
@@ -102,10 +102,13 @@ int main(void) {
                 if (delta > 0.0) {  //Delta maior que zero, possui duas raizes
                     printf("\nComo Delta > 0, existem duas raizes reais: \n");
                     printf("\n2) Aplicar formula de bhaskara: \n");
+                    printf ("\nFormula para resolucao x= -(b) (+-) raiz2DELTA / 2*a \n");
+                    printf ("\nx1 = [-(%.f) + raiz%.f] / [2*%.f]\n", a, delta, b );
+                    printf ("x2 = [-(%.f) - raiz%.f] / [2*%.f]\n", a, delta, b );
                     x1 = (-b + sqrt(delta)) / (2.0*a);
                     x2 = (-b - sqrt(delta)) / (2.0*a);
 
-                    printf("x1 = %.2f\n", x1);
+                    printf("\nx1 = %.2f\n", x1);
                     printf("x2 = %.2f\n", x2);
                 } else if (delta == 0.0) {
                     x1 = -b / (2.0*a);
@@ -129,3 +132,5 @@ int main(void) {
 
     return 0;
 }
+
+
