@@ -1,7 +1,7 @@
 #include <stdio.h> // biblioteca com funcao printf
 #include <math.h> // biblioteca com funcoes da matematica, ex: sqrt
 #include <locale.h> // biblioteca para expressoes da lingua portuguesa
-
+//MAURO PASSOU AQUI
 int main(void) {
     setlocale(LC_ALL, "Portuguese");
 
@@ -129,3 +129,4 @@ int main(void) {
 
     return 0;
 }
+
